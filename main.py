@@ -7,7 +7,7 @@ query = input("What are you interested in today?\n")
 api = "cc776d59bedf41bc8da53433c5387c8b"
 
 # API URL
-url = f"https://newsapi.org/v2/everything?q={query}&from=2025-08-22&sortBy=publishedAt&apiKey={api}"
+url = f"https://newsapi.org/v2/everything?q={query}&sortBy=publishedAt&apiKey={api}"
 
 # Print URL (optional, for debugging)
 print(url)
@@ -26,3 +26,4 @@ for index, article in enumerate(articles, start=1):
     print(f"{index}. {article.get('title')}")
     print(f"Link: {article.get('url')}")
     print("\n********************\n")
+
